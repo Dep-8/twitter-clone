@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100;300;400&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main-div-one{
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.main-div-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.twitter-logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    position: fixed;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twitter-logo img{
+    width: 50px;
+}
+
+nav{
+    font-size: 1rem;
+    position: fixed;
+}
+
+nav ul{
+    position: relative;
+    top: 80px;
+    right: 40px;
+}
+
+nav li{
+    padding-top: 20px;
+}
+
+nav li:hover{
+    background-color: rgba(223, 228, 234,1.0);
+    border-radius: 10px;
+}
+
+nav button{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+    right: 40px;
+}
+
+.profile-pic{
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    position: fixed;
+    bottom: 10px;
+    left: 30px;
+    border-radius: 50px;
+    
+}
+.profile-pic img{
+    width: 100%;
+    z-index: -1;
+    border-radius: 70px;
+}
+.profile-deitails{
+    position: fixed;
+    bottom: 20px;
+    left: 130px;
+    font-weight: bold;
+
+}
+/* -------middle------- */
+.main-div-middle{
+    flex: 1.5;
+    position: relative;
+    border-left: 1px solid rgba(223, 228, 234,1.0);
+    border-right: 1px solid rgba(223, 228, 234,1.0);
+}
+
+.main-div-middle header{
+    width: 33.333%;
+    height: 50px;
+    background-color: rgba(255, 255, 255,0.8);
+    position: fixed;
+    z-index: 20;
+}
+.main-div-middle header h1{
+    position: relative;
+    margin: 10px;
+    font-size: 1.3rem;
+}
+
+.main-div-middle .posts{
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.main-div-middle .posts p{
+    position: relative;
+}
+
+.main-div-middle .posts img{
+    width: 70%;
+
+}
+/* -------right------- */
+
+.main-div-right{
+    flex: 1;
+    position: relative;
+    padding-left: 10px;
+}
+
+.main-div-right .content{
+    width: 350px;
+    height: auto;
+    background-color: rgba(223, 228, 234,0.5);
+    border-radius: 10px;
+}
+
+.main-div-right input{
+position: fixed;
+padding: 6px;
+margin-top: 20px;
+margin-left: 100px;
+border: none;
+font-size: 17px;
+border-radius: 30px;
+background-color: rgba(223, 228, 234,1.0);
+}
+
+.main-div-right .content{
+    float: right;
+    margin-top: 80px;
+    margin-right: 100px;
+    padding: 10px;
+}
+@media all and (min-width: 992px) and (max-width: 1200px){
+    .main-div-right .content{
+        width: 250px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .main-div-right input{
+        padding: 4px;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 14px;
+        border-radius: 30px;
+        }
+
+    .main-div-middle .posts img{
+        width: 50%;
+    }    
+
+    nav ul{
+        position: relative;
+        top: 100px;
+        right: 0px;
+    }
+
+    .profile-pic{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 600px;
+        left: 20px;
+        border-radius: 50px;
+        
+    }
+
+    .profile-deitails{
+        top: 600px;
+        left: 90px;
+    }
+    nav button{
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #3498db;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        position: relative;
+        top: 130px;
+        right: 0px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    
+    .main-div-right .content{
+        width: 250px;
+        margin-left: 10px;
+    }
+
+    .main-div-right input{
+        padding: 4px;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 14px;
+        border-radius: 30px;
+        width: 25%;
+        }
+
+    .main-div-middle .posts img{
+        width: 50%;
+    }    
+
+    nav ul{
+        position: relative;
+        top: 100px;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .profile-pic{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 50px;
+        border-radius: 50px;
+        
+    }
+
+    .profile-deitails{
+        top: 700px;
+        left: 60px;
+        display: none;
+    }
+    .twitter-logo{
+        display: none;
+    }
+
+    nav button{
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #3498db;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        position: relative;
+        top: 150px;
+        right: 0px;
+    }
+}
+
+
+
+
